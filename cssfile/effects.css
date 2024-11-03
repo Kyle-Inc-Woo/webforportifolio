@@ -1,0 +1,14 @@
+@keyframes neon-flicker {
+    0% {
+        text-shadow: 
+        0 0 10px rgb(227, 89, 188), 
+        0 0 20px rgba(89, 227, 167), 
+        0 0 30px rgba(89, 227, 167);
+    }
+    100% {
+        text-shadow: 
+        0 0 20px rgba(89, 227, 167), 
+        0 0 30px rgba(89, 227, 167), 
+        0 0 40px rgba(89, 227, 167);
+    }
+}

@@ -1,0 +1,30 @@
+header {
+    color: rgba(89, 227, 167, 0.77);
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+    text-shadow: 0 0 10px rgba(89, 227, 167);
+    animation: neon-flicker 1s infinite alternate;
+}
+
+html {
+    background-image: url(/jpgs/backgroundimage.jpeg);
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: cadetblue;
+}

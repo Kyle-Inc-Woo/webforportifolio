@@ -1,6 +1,6 @@
 
 /*Neon effect*/
-@keyframes neon-flicker {
+/*@keyframes neon-flicker {
     0% {
         text-shadow: 
         0 0 10px rgb(89, 227, 167), 
@@ -14,3 +14,9 @@
         0 0 40px rgba(89, 227, 167);
     }
 }
+
+h1 {
+    color: rgba(89, 227, 167, 0.77);
+    text-shadow: 0 0 10px rgba(89, 227, 167);
+    animation: neon-flicker 1s infinite alternate;
+}*/

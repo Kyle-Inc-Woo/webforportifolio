@@ -28,7 +28,7 @@ header .homeicon img {
 
 .vertical-nav {
     height: 100vh;
-    width: 60px; /* 기본 축소 상태 */
+    width: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@ header .homeicon img {
 }
 
 .vertical-nav.expanded {
-    width: 200px; /* 확장된 상태 */
+    width: 200px;
 }
 
 .vertical-nav a, .vertical-nav #toggle-btn {
@@ -65,7 +65,7 @@ header .homeicon img {
 }
 
 .vertical-nav a img {
-    width: 24px; /* 아이콘 크기 */
+    width: 24px; 
     height: 24px;
     margin-right: 10px;
     object-fit: contain;
@@ -87,7 +87,7 @@ header .homeicon img {
 }
 
 .content {
-    margin-left: 60px; /* 네비게이션 기본 크기만큼 여백 */
+    margin-left: 60px; 
     padding: 20px;
     transition: margin-left 0.3s;
 }
@@ -96,17 +96,28 @@ header .homeicon img {
     margin-left: 200px; 
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20%;
+}
+
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
     padding: 10px;
 }
 
 .box img {
-    width: 20%;
-    height: 20%;
+    width: 60%;
+    height: 60%;
+}
+
+.box h2{
+    margin-right: 28%;
 }
 
 .content h1 {

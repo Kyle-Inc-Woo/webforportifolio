@@ -1,0 +1,127 @@
+/* 배경색 유지 */
+html {
+    background-color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* 헤더 설정 */
+header h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+/* 음악 리스트 스타일 */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 400px;
+}
+
+#playlist li {
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#playlist li:hover {
+    background-color: #555;
+}
+
+/* 하단 오디오 플레이어 스타일 */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #222;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#audioPlayer {
+    width: 90%;
+    max-width: 600px;
+}
+
+.key{
+    margin-top: 2%;
+}
+
+main img{
+    display: flex;
+    width: 28%;
+    height: 20%;
+    margin-left: 22%;
+}
+
+ul {
+    margin-left: 55%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.key img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px; /* 이미지와 리스트 간격 */
+    border-radius: 8px;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    max-width: 300px;
+}
+
+#playlist li {
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#playlist li:hover {
+    background-color: #555;
+}

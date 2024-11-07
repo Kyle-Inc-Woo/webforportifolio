@@ -1,16 +1,23 @@
 html {
     /*background-image: url(/jpgs/backgroundimage.jpeg);*/
     background-size: cover;
+    background-color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
 }
 
 header {
     text-align: center;
     font-size: 20px;
-    font-family: monospace;  
-    color:black
+    font-family: monospace;
+    color: white;
 }
 
-header .homeicon img{
+header .homeicon img {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -19,27 +26,26 @@ header .homeicon img{
     height: 40px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
 .vertical-nav {
     height: 100vh;
     width: 60px; /* 기본 축소 상태 */
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: white;
     overflow-x: hidden;
     transition: width 0.3s;
+}
+
+.vertical-nav.expanded {
+    width: 200px; /* 확장된 상태 */
 }
 
 .vertical-nav a, .vertical-nav #toggle-btn {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: black;
     display: block;
     text-align: left;
     border: none;
@@ -49,12 +55,31 @@ body {
     transition: background-color 0.3s;
 }
 
-.vertical-nav a:hover {
-    background-color: #575757;
+.vertical-nav a {
+    display: flex;
+    align-items: center;
 }
 
-.vertical-nav.expanded {
-    width: 200px; /* 확장된 상태 */
+.vertical-nav a:hover {
+    background-color: #c6bebe;
+}
+
+.vertical-nav a img {
+    width: 24px; /* 아이콘 크기 */
+    height: 24px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.vertical-nav a span {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.vertical-nav.expanded a span {
+    opacity: 1;
+    visibility: visible;
 }
 
 #toggle-btn {
@@ -68,7 +93,7 @@ body {
 }
 
 .content.expanded {
-    margin-left: 200px; /* 확장된 네비게이션 크기만큼 여백 */
+    margin-left: 200px; 
 }
 
 .box {
@@ -76,27 +101,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    padding: 10px;
 }
 
-.box img{
+.box img {
     width: 20%;
     height: 20%;
 }
 
-
-
-/*.container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+.content h1 {
+    color: white;
 }
 
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: cadetblue;
-}*/
+

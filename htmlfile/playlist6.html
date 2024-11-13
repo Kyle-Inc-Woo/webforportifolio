@@ -15,6 +15,10 @@
     </header>
     <div id="navbar" class="vertical-nav">
         <button id="toggle-btn" onclick="toggleNav()">☰</button>
+        <a href="/htmlfile/main.html">
+            <img src="/jpgs/homeicon.png" alt="Home">
+           <span>Home</span>
+        </a>
         <a href="/htmlfile/login.html">
             <img src="/jpgs/loginicon.png" alt="login">
             <span>Log-in</span>
@@ -36,5 +40,16 @@
            <span> Policy</span>
         </a>
     </div>
+    <main>
+        <div class="key">
+            <img src="/jpgs/playlist_6.jpeg" alt="">
+            <ul id="playlist">
+                <li onclick="playSong(0)">Song 1</li>
+                <li onclick="playSong(1)">Song 2</li>
+                <li onclick="playSong(2)">Song 3</li>
+                <li onclick="playSong(3)">Song 4</li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
